@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains', monospace;
+}
+button{
+    cursor: pointer;
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+:root{
+    --blue: #0A3871;
+    --gray: #D8DFE8;
+    --alice-blue: #F3F5FC;
+    --white: #FFF;
+}
+
+.main-container{
+    position: relative;
+    max-height: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    min-width: 100vw;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-content: center;
+    background-color: var(--alice-blue);
+}
+.logo{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    position: relative;
+    margin-left: 2rem;
+    margin-top: -1.5rem;
+}
+.form{
+    position: relative;
+    width: 50vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-input{
+    resize: none;
+    border: none;
+    outline: none;
+    top: 0;
+    position: relative;
+    height: 70%;
+    width: 90%;
+    font-size: larger;
+    color: var(--blue);
+    background-color: transparent;
+}
+.text-input::placeholder{
+    color: var(--blue);
+}
+.result-container{
+    position: relative;
+    width: 25vw;
+    height: 85vh;
+    background-color: var(--white);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    margin-top: 2rem;
+}
+.button{
+    width: 20vw;
+    height: 7vh;
+    border-radius: 15px;
+    background-color: transparent;
+}
+.dark{
+    background-color: var(--blue);
+    color: var(--gray);
+}
+.light{
+    background-color: var(--gray);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+.white-bg{
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+.no-result{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    position: relative;
+    width: 90%;
+    text-align: center;
+}
+.alert{
+    width: 90%;
+    position: relative;
+}
+.subtitle{
+    text-align: center;
+    font-size: small;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 1rem ;
+}
+.banner{
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+}
+.result{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.big-text{
+    position: relative;
+    width: 90%;
+    height: 85%;
+    font-style: normal;
+    font-weight: 300;
+}
+.invisible{
+    display: none;
+}
