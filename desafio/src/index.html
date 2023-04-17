@@ -20,19 +20,19 @@
                 <span class="tiny-text">Solo letras minusculas y sin acentos</span>
             </section>
             <section class="buttons">
-                <button class="button dark">Encriptar</button>
-                <button class="button light">Desencriptar</button>
+                <button class="button dark" id="encriptar">Encriptar</button>
+                <button class="button light" id="desencriptar">Desencriptar</button>
             </section>
         </form>
         <div class="result-container">
-            <section class="no-result invisible">
+            <section class="no-result" id="no-result-section">
                 <img src="../assets/banner.png" alt="Nada que encriptar/desencriptar" class="banner">
                 <h1 class="title">Ningun mensaje fue encontrado</h1>
                 <p class="subtitle">Ingresa el texto que desees encriptar o desencriptar</p>
             </section>
-            <section class="result">
-                <p class="big-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nulla laboriosam molestias sapiente ab hic numquam corrupti cum impedit, tempore repellendus esse recusandae laborum magnam, eum culpa dicta ducimus perferendis?</p>
-                <button class="button white-bg">Copiar</button>
+            <section class="result invisible" id="result-section">
+                <p class="big-text" id="result-text"></p>
+                <button class="button white-bg" id="copy">Copiar</button>
             </section>
         </div>
     </div>
