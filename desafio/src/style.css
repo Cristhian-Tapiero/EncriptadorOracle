@@ -142,7 +142,7 @@ button{
     font-style: normal;
     font-weight: 300;
 }
-@media(max-width: 480px){
+@media(max-width: 1025px){
     *{
         margin: 0;
         padding: 0;
